@@ -5,7 +5,7 @@
 		<description></description>
 		<author>Instagram</author>
 		<update version="0.0.7">
-			<file name="insta magic items.xml" url=""/>
+			<file name="insta magic items.xml" url="https://raw.githubusercontent.com/HWAurora26/AuroraBuilder/main/insta%20magic%20items.xml"/>
 		</update>
 	</info>
     </element>
