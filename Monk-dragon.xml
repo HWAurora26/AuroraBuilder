@@ -5,7 +5,7 @@
 		<description>The Way of The Ascendant Dragon from Unearthed Arcana Subclasses part 5</description>
 		<author url="https://media.wizards.com/2020/dnd/downloads/UA2020_102620_Subclasses05.pdf">Unearthed Arcana Subclasses part 5</author>
         <update version="0.0.1">
-			<file name="Monk-dragon.xml" url="https://raw.githubusercontent.com/HWAurora26/AuroraBuilder/main/Monk-dragon.xml?token=ATOAEMYYIJ4KOQRKC2DYMEDAMC43I"/>
+			<file name="Monk-dragon.xml" url="https://raw.githubusercontent.com/HWAurora26/AuroraBuilder/main/Monk-dragon.xml"/>
 		</update>
 	</info>
 	<element name="Way of the Ascendant Dragon" type="Archetype" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_MONK_WAY_OF_THE_ASCENDANT_DRAGON">
