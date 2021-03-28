@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of The Ascendant Dragon</name>
+		<description>The Way of The Ascendant Dragon from Unearthed Arcana Subclasses part 5</description>
+		<author url="https://media.wizards.com/2020/dnd/downloads/UA2020_102620_Subclasses05.pdf">Unearthed Arcana Subclasses part 5</author>
+        <update version="0.0.1">
+			<file name="Monk-dragon.xml"/>
+		</update>
+	</info>
+	<element name="Way of the Ascendant Dragon" type="Archetype" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_MONK_WAY_OF_THE_ASCENDANT_DRAGON">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Ascendant Dragon learn to manipulate the life force of others to bring aid to those in need. They are wandering physicians to the poor and hurt. However, to those beyond their help, they bring a swift end as an act of mercy.</p>
+			<p class="indent">Those who follow the Way of the Ascendant Dragon might be members of a religious order, administering to the needy and making grim choices rooted in reality rather than idealism. Some might be gentle-voiced healers, beloved by their communities, while others might be masked bringers of macabre mercies.</p>
+			<p class="indent">The walkers of this way usually don robes with deep cowls, and they often conceal their faces with masks, presenting themselves as the faceless bringers of life and death.</p>
+			<div element="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_DRACONIC_DISCIPLE" />
+			<div element="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_BREATH_OF_THE_DRAGON" />
+			<div element="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_WINGS_UNFURLED" />
+			<div element="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_ASPECT_OF_THE_WYRM" />
+			<div element="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_ASCENDANT ASPECT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_DRACONIC_DISCIPLE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_BREATH_OF_THE_DRAGON" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_WINGS_UNFURLED" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_ASPECT_OF_THE_WYRM" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_ASCENDANT_ASPECT" level="17" />
+		</rules>
+	</element>
+	<element name="Draconic Disciple" type="Archetype Feature" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_DRACONIC_DISCIPLE">
+		<description>
+			<p><em>3rd-level Way of the Ascendant Dragon feature</em></p>
+			<p>You learn to speak, read and write draconic.</p>
+			<p class="indent">You can channel your draconic ki to imbue your unarmed strikes with the essence of a dragon’s breath and to use your connection with draconic creatures to magnify your presence.</p>
+            <p class="indent">If you fail a Charisma (Intimidation) or Charisma (Persuasion) check, you can use your reaction to reroll the check, as you tap into the might presence of dragons. Once this feature is used, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet>
+            <description>You can change the damage type of your unarmed strikes to acid, cold, fire, lightining or poison.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+        </rules>
+	</element>
+	<element name="Breath of The Dragon" type="Archetype Feature" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_BREATH_OF_THE_DRAGON">
+		<description>
+			<p><em>3rd-level Way of the Ascendant Dragon feature</em></p>
+			<p>You can channel your ki into destructive waves of energy like the dragons you emulate. When you take the Attack action on your turn, you can replace one of the attacks with an exhalation of draconic energy in either a 20-foot cone or a 30-foot line that is 5 feet wide (your choice). Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in the area must make a Dexterity saving throw against your ki save DC, taking damage of the chosen type equal to two rolls of your Martial Arts die on a failure, or half as much damage on a success. At 11th level, the damage of your breath increases to three rolls of your Martial Arts die. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">While you have no uses available, you can spend 1 ki point to use this feature again.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description level="3">When you take the attack action on your turn, you can replace one of the attacks with an exhalation of draconic energy in either a 20ft cone or 30ft line that is 5ft wide, your choice. Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in the area must make a dextrity saving throw {{ki:dc}} taking 2d{{martial arts:dice}} of the chosen damage type on a failure, or half as much on a success. 
+			While you have no uses available, you can spend 1 ki point to use this feature again.</description>
+            <description level="11">When you take the attack action on your turn, you can replace one of the attacks with an exhalation of draconic energy in either a 20ft cone or 30ft line that is 5ft wide, your choice. Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in the area must make a dextrity saving throw {{ki:dc}} taking 3d{{martial arts:dice}} of the chosen damage type on a failure, or half as much on a success. 
+			While you have no uses available, you can spend 1 ki point to use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="Wings Unfurled" type="Archetype Feature" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_WINGS_UNFURLED">
+		<description>
+			<p><em>6th-level Way of the Ascendant Dragon feature</em></p>
+			<p>When you use your Step of the Wind, you can unfurl spectral draconic wings from your back that vanish at the end of your turn. While the wings exist, you have a flying speed equal to your walking speed. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p> 
+            <p class="indent">While you have no uses available, you can spend 1 additional ki point when you activate Step of the Wind to use this feature again.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you use your Step of the Wind, you can unfurl spectral draconic wings from your back that vanish at the end of your turn. While the wings exist, you have a fly speed equal to your walking speed. While you have no uses available, you can spend 1 additional ki point when you activate Step of the Wind to use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="Aspect of the Wyrm" type="Archetype Feature" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_ASPECT_OF_THE_WYRM">
+		<description>
+			<p><em>11th-level Way of the Ascendant Dragon feature</em></p>
+			<p>The power of your draconic ki now radiates from you, protecting your allies from harm and punishing any who raise arms against them. As a bonus action, you can create an aura of draconic power that radiates 30 feet from you for 1 minute. Choose acid, cold, fire, lightning, or poison damage, and for the duration, you gain the following effects:</p>
+			<p class="indent">You and your allies within your aura gain resistance to the chosen damage type.</p>
+			<p class="indent">Waves of destructive energy flow out from you and your allies when any of you are attacked. When you or one of your allies in the aura is hit by an attack made by another creature within the aura, the target that was hit can use their reaction to deal an amount of damage of the chosen type equal to one roll of your Martial Arts die to the attacker. Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend 4 ki points to use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You create a draconic aura that radiates 30ft from you for 1 minute. Choose acid, cold, fire, lightning or poison damage.You and your allies within your aura gain resistance to the chosen damage type. 
+            When you or one of your allies in the aura is hit by an attack made by another creature within the aura, the target that was hit can use their reaction to deal {{martial arts:dice}} of the chosen type to the attacker. 
+            Once out of your number of uses, you expend 4 ki points to use it again.</description>
+		</sheet>
+	</element>
+	<element name="Flurry of Healing and Harm" type="Archetype Feature" source="Unearthed Arcana Subclasses part 5" id="ID_WOTC_UASP5_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_ASCENDANT_ASPECT">
+		<description>
+			<p><em>17th-level Way of the Ascendant Dragon feature</em></p>
+			<p>Your draconic ki reaches its peak. You gain the following benefits</p>
+			<p class="indent">You gain blindsight out to 30ft. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you. </p>
+            <p class="indent"> When you damage a creature with your Breath of the Dragon, the energy clings to the target. At the start of each of the creature’s turns, it takes damage of the type your breath dealt equal to one roll of your Martial Arts die. At the end of its turn, the creature can repeat the save, ending the effect on itself on a success.</p>
+            <p class="indent"> When you activate your Aspect of the Wyrm, draconic fury explodes from you. Choose any number of creatures you can see within your aura. Those creatures each take 4d10 acid, cold, fire, lightning, or poison damage (your choice). </p>
+		</description>
+		<sheet>
+			<description>You gain blindsight out to 30ft. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.
+            When you damage a creature with your Breath of the Dragon, the energy clings to the target. At the start of each of the creature’s turns, it takes {{martial arts:dice}} damage of the type your breath dealt. At the end of its turn, the creature can repeat the save, ending the effect on itself on a success.
+            When you activate your Aspect of the Wyrm, draconic fury explodes from you. Choose any number of creatures you can see within your aura. Those creatures each take 4d10 acid, cold, fire, lightning, or poison damage (your choice).</description>
+		</sheet>
+	</element>
+  
+</elements>
