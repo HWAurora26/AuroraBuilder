@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Instagram Magic Items</name>
+		<description></description>
+		<author>Instagram</author>
+		<update version="0.0.7">
+			<file name="insta magic items.xml" url=""/>
+		</update>
+	</info>
+    </element>
+	<element name="Trident of the Electric Eel" type="Magic Item" source="Instagram" id="ID_WOTC_INTAGRAM_MAGIC_ITEM_TRIDENT_OF_THE_ELECTRIC_EEL">
+		<description>
+			<p> Discharge. When you make a melee or ranged attack using this magic weapon you can speak its command word as a bonus action, causing it to emit a burst of lightning. Each creature within 5 feet of it (or within 10 feet of it underwater), must succeed on a DC 13 Dexterity saving throw or take 1d6 lightning damage. A creature that fails this saving throw by 10 or more (DC 3) is also stunned until the end of its next turn.</p>
+			<p class="indent"><strong><em>Dinglehopper.</em></strong>As an action, you can command this weapon to magically shrink down to the size of common oyster folk, known as a dinglehopper, or to re-enlarge.</p>
+			<p class="indent"><strong><em>Lightning.</em></strong>As an action, you can cast the <em>lightning arrow</em> spell (save DC 13). Once you do so, you can’t use the Discharge or Lightning feature again until the following dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">trident</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="trident">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">trident</set>
+			<set name="name-format">Trident of the Electric Eel</set>
+		</setters>
+	</element>
+    </element>
+    <element name="Trident Mastery" type="Feat" source="Homebrew" id="ID_WOTC_HOMEBREW_FEAT_TRIDENT_MASTERY">
+		<description>
+			<p>Though the trident is a simple weapon to learn, it rewards you for the time you have taken to master it. You gain the following benefits.</p>
+			<ul>
+				<li>You gain a +1 bonus to attack rolls you make with a trident.</li>
+				<li>When you use a trident, its damage die changes from a d6 to a d8, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon’s die.)</li>
+				<li>You can set your trident to receive a charge. As a bonus action, choose a creature you can see that is at least 20 feet away from you. If that creatures moves within your trident’s reach on its next turn, you can make a melee attack against it with your trident as a reaction. If the attack hits, the target takes an extra 1d8 piercing damage, or an extra 1d10 piercing damage if you wield the trident with two hands.You can’t use this ability if the creature used the Disengage action before moving.</li>
+				<li>As a bonus action on your turn, you can increase your reach with a trident by 5 feet for the rest of your turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When using a trident, you gain +1 to attack rolls with that weapon. 
+			Its damage die changes from a d6 to a d8, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon’s die.).
+			You can set your trident to receive a charge. As a bonus action, choose a creature you can see that is at least 20 feet away from you. If that creatures moves within your trident’s reach on its next turn, you can make a melee attack against it with your trident as a reaction. If the attack hits, the target takes an extra 1d8 piercing damage, or an extra 1d10 piercing damage if you wield the trident with two hands.You can’t use this ability if the creature used the Disengage action before moving. 
+			As a bonus action on your turn, you can increase your reach with a trident by 5 feet for the rest of your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="trident:attack" value="1" />
+			<!-- to implement: increase weapon's damage die -->
+		</rules>
+	</element>
+    </element>
+    <element name="Tide Cutter" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_TIDE_CUTTER">
+		<description>
+			<p>This item appears to be a Sword hilt stylized with brass tenticles. While grasping the hilt, you can use a bonus action to cause a blade of rushing water to spring forth, or make it disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the <em>Tide Cutter</em>.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.</p>
+			<p class="indent"><strong><em>Water Lash.</em></strong>As an action, you can slash the sword towards a target within 20ft of you, causing the blade to elongate into a whip. Make a melee attack against the target using this weapon's normal statistics. On a hit you can pull a Large or smaller creature, or an objest that weighs 500lbs or less, up to 15ft closer to you. If the target is a fixed object or a Huge or larger creature, you can pull yourself 15ft towards the target.</p>
+            <p class="indent"><strong><em>Waterborne.</em></strong>When submerged in water, this longsword gains the reach property and the range of the Water Whip feature increases to 30ft.</p>
+            <p class="indent"><strong><em>Hydrodynamic.</em></strong>Attacking while underwater does not impose disadvantage on attack rolls you make with this weapon.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+    </element>
+    <element name="Pisces Shield" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_PISCES_SHIELD">
+		<description>
+			<p>This round iron shield is emblazoned with two spiraling golden koi. If the shield is submerged in water for at least 1 minute, the koi begin to animate and swim across the surface of the shield for up to 24 hours. While the koi are swimming in this way, the next time you roll a 1 on the d20 for an attack roll, ability check, or saving throw while holding the shield, you can treat the roll as if it were a 20 instead. When you do, the koi stop swimming, and they can't swim again until 24 hours have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+	</element>
+    </element>
+     <element name="Brutal Macuahuitl" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_BRUTAL_MACUAHUITL">
+		<description>
+			<p>This tribal sword's sturdy wooden frame is lined with obsidian shards, allowing attacks made with it to deal either bludgeoning or slashing damage (your choice). In addition, the sword has been enchanted through numerous blood rituals by war priests. When you roll a 20 on your attack roll with this magic weapon against a creature, that creature becomes marked for death until the start of your next turn. A marked creature can't regain hit points, and when the mark ends, that creature takes 1d8 necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+    <element name="Whirlpool Dart" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_WHIRLPOOL_DART">
+		<description>
+			<p>This dart feels cold and hefty in the hand, but flies effortlessly when thrown.</p>
+			<p class="indent">As an action, you can throw this dart at a point within 20 feet of you and speak its command word to cause it to create a wild, spiraling whirlpool in a 15-foot-radius, 10-foot-high cylinder centered on that point. Each creature in the area excluding you must make a DC 13 Strength saving throw. On a failed save, a creature takes 4d4 bludgeoning damage and is pulled up to 15 feet toward the center of the cylinder. On a successful save, a creature takes half as much damage and isn't pulled. In addition, unsecured objects that are completely within the cylinder are automatically pulled 15 feet toward the center by this effect, and all nonmagical flames within the cylinder are extinguished.</p>
+			<p class="indent">The dart's property can't be used again until the next dawn. In the meantime, the dart can still be used as a magic weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dart">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dart</set>
+		</setters>
+	</element>
+    <element name="Cast-Off Mariner's Armor" type="Magic Item" source="Homebrew" id="ID_WOTC_HOMEBREW_MAGIC_ITEM_CAST_OFF_MARINERS_ARMOR">		
+		<description>
+			<p>You can doff this armor as an action. While wearing this armor, you have a swimming speed equal to your walking speed. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface. The armor copper with a rubberised undersuit, the metal decorated with octopus motifs .</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="light, medium or heavy">Armor</set> 
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Cast-Off Mariner's {{parent}}</set>
+		</setters>
+	</element>
