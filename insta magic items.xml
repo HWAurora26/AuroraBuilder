@@ -8,7 +8,6 @@
 			<file name="insta magic items.xml" url="https://raw.githubusercontent.com/HWAurora26/AuroraBuilder/main/insta%20magic%20items.xml"/>
 		</update>
 	</info>
-    </element>
 	<element name="Trident of the Electric Eel" type="Magic Item" source="Instagram" id="ID_WOTC_INTAGRAM_MAGIC_ITEM_TRIDENT_OF_THE_ELECTRIC_EEL">
 		<description>
 			<p> Discharge. When you make a melee or ranged attack using this magic weapon you can speak its command word as a bonus action, causing it to emit a burst of lightning. Each creature within 5 feet of it (or within 10 feet of it underwater), must succeed on a DC 13 Dexterity saving throw or take 1d6 lightning damage. A creature that fails this saving throw by 10 or more (DC 3) is also stunned until the end of its next turn.</p>
@@ -26,7 +25,6 @@
 			<set name="name-format">Trident of the Electric Eel</set>
 		</setters>
 	</element>
-    </element>
     <element name="Trident Mastery" type="Feat" source="Homebrew" id="ID_WOTC_HOMEBREW_FEAT_TRIDENT_MASTERY">
 		<description>
 			<p>Though the trident is a simple weapon to learn, it rewards you for the time you have taken to master it. You gain the following benefits.</p>
@@ -48,7 +46,6 @@
 			<!-- to implement: increase weapon's damage die -->
 		</rules>
 	</element>
-    </element>
     <element name="Tide Cutter" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_TIDE_CUTTER">
 		<description>
 			<p>This item appears to be a Sword hilt stylized with brass tenticles. While grasping the hilt, you can use a bonus action to cause a blade of rushing water to spring forth, or make it disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the <em>Tide Cutter</em>.</p>
@@ -68,7 +65,6 @@
 			<set name="weapon">Longsword</set>
 		</setters>
 	</element>
-    </element>
     <element name="Pisces Shield" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_PISCES_SHIELD">
 		<description>
 			<p>This round iron shield is emblazoned with two spiraling golden koi. If the shield is submerged in water for at least 1 minute, the koi begin to animate and swim across the surface of the shield for up to 24 hours. While the koi are swimming in this way, the next time you roll a 1 on the d20 for an attack roll, ability check, or saving throw while holding the shield, you can treat the roll as if it were a 20 instead. When you do, the koi stop swimming, and they can't swim again until 24 hours have passed.</p>
@@ -82,8 +78,7 @@
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 		</setters>
 	</element>
-    </element>
-     <element name="Brutal Macuahuitl" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_BRUTAL_MACUAHUITL">
+    <element name="Brutal Macuahuitl" type="Magic Item" source="Instagram" id="ID_WOTC_INSTAGRAM_MAGIC_ITEM_BRUTAL_MACUAHUITL">
 		<description>
 			<p>This tribal sword's sturdy wooden frame is lined with obsidian shards, allowing attacks made with it to deal either bludgeoning or slashing damage (your choice). In addition, the sword has been enchanted through numerous blood rituals by war priests. When you roll a 20 on your attack roll with this magic weapon against a creature, that creature becomes marked for death until the start of your next turn. A marked creature can't regain hit points, and when the mark ends, that creature takes 1d8 necrotic damage.</p>
 		</description>
@@ -124,3 +119,4 @@
 			<set name="name-format">Cast-Off Mariner's {{parent}}</set>
 		</setters>
 	</element>
+</elements>    
