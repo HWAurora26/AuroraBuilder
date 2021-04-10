@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.3">
+			<file name="race-gothic-lineage.xml"/>
+		</update>
+	</info>
+
+	<element name="Reborn" type="Race" source="Gothic Lineages UA" id="ID_WOTC_UAGL_RACE_GOTHIC_LINEAGE">
+		<description>
+			<p class="flavor">Death isn’t always the end. The reborn exemplify this, being individuals who have died yet, somehow, still live. Some reborn exhibit the scars of fatal fates, their ashen flesh, missing limbs, or bloodless veins making it clear that they’ve been touched by death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own</p>
+			<p>
+				<span class="feature">Creature Type.</span>You are a Humanoid, as well as Undead.<br />
+				<span class="feature">Size.</span>You are Small or Medium (your choice).<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2. Another by 1.<br />
+				<span class="feature">Deathless Nature.</span>You have escaped death, a fact represented by the following benefits: You have advantage on saving throws against disease or poison, and resistance to poison damage. You have advantage on death saving throws. You don't need to eat, drink, or breathe. You don't need to sleep, and magic cannot put you to sleep. You finish a long rest after 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness. <br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Size" supports="Reborn Size" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Reborn)" supports="Gothic Ability Score Increase 2" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement +1 (Reborn)" supports="Gothic Ability Score Increase 1" />
+			<select type="Racial Trait" name="Deathless Nature" supports="Reborn Deathless Nature" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UAGL_OPTION_GOTHIC_LANGUAGE" />
+			<select type="Language" name="GOTHIC Language" supports="GOTHIC Race Language" requirements="ID_WOTC_UAGL_OPTION_GOTHIC_LANGUAGE" />
+			<select type="Language" name="Language (Reborn)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+
+	<!-- Size, todo: delete later and replace with universal version -->
+	<element name="Small" type="Racial Trait" source="Gothic Lineages UA" id="ID_WOTC_UAGL_RACIAL_TRAIT_SMALL">
+		<supports> Reborn Size </supports>
+		<description>
+			<p>Your size is Small.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+		</rules>
+	</element>
+
+	<element name="Medium" type="Racial Trait" source="Gothic Lineages UA" id="ID_WOTC_UAGL_RACIAL_TRAIT_MEDIUM">
+		<supports> Reborn Size </supports>
+		<description>
+			<p>Your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+	</element>
+
+	<!-- Deathless Nature -->
+	<element name="Skill Proficiency" type="Racial Trait" source="Gothic Lineages UA" id="ID_WOTC_UAGL_RACIAL_TRAIT_SKILL_PROFIIENCY">
+		<supports> Reborn Deathless Nature </supports>
+		<description>
+			<p>You have advantage on saving throws against disease and being poisoned, and have resistance to poison damage. </p>
+			<p>You have advantage on death saving throws. </p>
+			<p>You don't need to eat, drink or breathe. </p>
+			<p> You don't need to sleep, and magic cannot put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against disease and poison, resistance to poison damage, and have advantage on death saving throws.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Darkvision" type="Racial Trait" source="Gothic Lineages UA" id="ID_WOTC_UAGL_RACIAL_TRAIT_DARKVISION">
+		<supports> Reborn Deathless Nature </supports>
+		<description>
+			<p>Darkvision with a range of 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+</elements>
